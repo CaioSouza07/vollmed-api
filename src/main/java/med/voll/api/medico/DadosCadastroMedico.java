@@ -3,7 +3,13 @@ package med.voll.api.medico;
 import med.voll.api.endereco.DadosEndereco;
 
 //Esse record chegou oficialmente no java 16, serve para criar uma classe imutavel mto mais enxuto que manualmente
-public record DadosCadastroMedico(String nome, String email, String crm, Especialidade especialidade, DadosEndereco endereco ) {
+public record DadosCadastroMedico(
+        String nome,
+        String email,
+        String crm,
+        Especialidade especialidade,
+        DadosEndereco endereco
+) {
 }
 
 //Segue abaixo exemplo do código acima sem utilizar o record, caso fosse feito em java 8
