@@ -1,5 +1,6 @@
 package med.voll.api.medico;
 
+import jakarta.validation.Valid;
 import med.voll.api.endereco.Endereco;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,7 @@ public class MedicoController {
 
     @PostMapping
     @Transactional
-    public void cadastrar(@RequestBody DadosCadastroMedico dados){
+    public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados){
         repository.save(new Medico(dados));
     }
 
