@@ -9,10 +9,10 @@ import med.voll.api.endereco.Endereco;
 
 @Table(name="medicos")
 @Entity(name="medico")
-@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
+@Getter
 public class Medico {
 
     @Id
