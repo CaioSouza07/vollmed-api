@@ -43,5 +43,14 @@ public class MedicoController {
         medico.atualizarInformacoes(dados);
     }
 
+    // aqui eu excluo de verdade do banco de dados (EXCLUSÃO FÍSICA)
+//    @DeleteMapping("/{id}")
+//    @Transactional
+//    public void deletar(@PathVariable Long id){
+//        repository.deleteById(id);
+//    }
+
+
+
 
 }
