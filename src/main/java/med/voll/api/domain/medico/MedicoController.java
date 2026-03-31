@@ -1,7 +1,6 @@
-package med.voll.api.medico;
+package med.voll.api.domain.medico;
 
 import jakarta.validation.Valid;
-import med.voll.api.endereco.Endereco;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,9 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping("medicos")
