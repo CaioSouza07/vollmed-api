@@ -20,7 +20,7 @@ public record DadosCadastroMedico(
         String telefone,
 
         @NotBlank
-        @Pattern(regexp = "\\d{4,6}")
+        @Pattern(regexp = "\\d{4,6}", message = "O CRM precisa ter entre 4 a 6 algarismos")
         String crm,
 
         @NotNull
